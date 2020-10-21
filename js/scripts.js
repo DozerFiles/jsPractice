@@ -65,5 +65,15 @@
       });
     });
   
+    $("#home-pic").click(function(){
+      $("#home-pic").addClass("flipped")
+    });
+
   })(jQuery); // End of use strict
-  
+
+
+  function myFunction() {
+    var picture = document.getElementById("home-pic");
+  }
+
+  console.log("We're flipping the pic");
