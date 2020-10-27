@@ -1,8 +1,3 @@
-/*!
-    * Start Bootstrap - Freelancer v6.0.4 (https://startbootstrap.com/themes/freelancer)
-    * Copyright 2013-2020 Start Bootstrap
-    * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-freelancer/blob/master/LICENSE)
-    */
     (function($) {
     "use strict"; // Start of use strict
   
@@ -65,15 +60,14 @@
       });
     });
   
-    $("#home-pic").click(function(){
-      $("#home-pic").addClass("flipped")
+    $("#home-pic, #cabin-pic").click(function(){
+      $("#home-pic, #cabin-pic").toggleClass("flipped")
     });
 
   })(jQuery); // End of use strict
 
-
   function myFunction() {
-    var picture = document.getElementById("home-pic");
+    var picture = document.getElementById("home-pic, cabin-pic");
   }
 
   console.log("We're flipping the pic");
